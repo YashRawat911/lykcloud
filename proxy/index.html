@@ -1,0 +1,205 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Lyk Cloud ☁️ - Proxy List</title>
+          <link rel="stylesheet" href="styles.css">
+          <style>
+            /* styles.css */
+
+            /* Reset styles */
+            body {
+              margin: 0;
+              padding: 0;
+            }
+
+            /* Global styling */
+            body {
+              font-family: 'Ubuntu Mono', monospace;
+              color: #ddd;
+              background-color: #2c2c2c;
+            }
+
+            /* Header styling */
+            header {
+              background-color: #303030;
+              color: #ddd;
+              padding: 1rem;
+              text-align: center;
+            }
+
+            /* Navigation styling */
+            nav ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }
+
+            nav li {
+              display: inline;
+              margin-right: 20px;
+            }
+
+            nav a {
+              text-decoration: none;
+              color: #ddd;
+              font-weight: bold;
+            }
+            /* Container styling */
+            .container {
+              display: flex;
+              max-width: 1000px;
+              margin: 0 auto;
+              text-align: center;
+              flex-direction: row; /* Change the flex direction to row */
+              align-items: center; /* Center items horizontally */
+              padding: 2rem;
+              justify-content: space-around; /* Adjust spacing between containers */
+            }
+
+            /* Proxy styling */
+            .proxy {
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              padding: 20px;
+              margin: 15px;
+              background-color: #444;
+              text-align: center; /* Center text within each proxy container */
+            }
+
+            .proxy h2 {
+              margin-bottom: 6px;
+              color: #fff; /* White text for the heading */
+            }
+
+            .proxy p {
+              margin: 8px 0;
+            }
+
+            .flag-img {
+              width: 60px; /* Adjust the width as needed */
+              height: auto;
+              margin-bottom: 5px;
+            }
+
+            /* Button styling */
+            .copy-button {
+              background-color: #333; /* Dark background color */
+              color: #ddd; /* Light text color */
+              font-family: 'Ubuntu Mono', monospace;
+              font-size: 14px;
+              font-weight: bold;
+              border: 2px solid #ddd; /* Light border color */
+              border-radius: 5px;
+              padding: 5px 10px;
+              cursor: pointer;
+              transition: background-color 0.3s, color 0.3s;
+              margin: 6px;
+            }
+
+            .copy-button:hover {
+              background-color: #ddd; /* Light background color on hover */
+              color: #333; /* Dark text color on hover */
+            }
+
+            /* Footer styling */
+            footer {
+              background-color: #303030;
+              color: #ddd;
+              text-align: center;
+              padding: 1rem;
+            }
+
+            /* Media query for small screens */
+            @media only screen and (max-width: 600px) {
+              .container {
+                flex-direction: column; /* Change the flex direction to column for small screens */
+                align-items: stretch; /* Stretch items vertically */
+              }
+
+              .proxy {
+                width: 80%; /* Make the proxies take up the full width */
+              }
+            }
+
+          </style>
+        </head>
+        <body>
+
+          <header>
+            <h1>Lyk Cloud ☁️ - Proxy</h1>
+            <nav>
+              <ul>
+                <li><a href="#home">🏠 Home</a></li>
+                <li><a href="/shop">📦 Products</a></li>
+                <li><a href="/shop">🛡️ Proxy</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <section id="proxies" class="container">
+            <div class="proxy">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_India.png/2560px-Flag_of_India.png" alt="India Flag" class="flag-img">
+              <h2>India, Tamil Nadu 🇮🇳</h2>
+              <p>IP: 103.178.158.190</p>
+              <p>Port: 1150</p>
+              <p>Protocol: HTTP</p>
+              <button class="copy-button" onclick="copyToClipboard('ip1')">Click to Copy IP</button>
+              <button class="copy-button" onclick="copyToClipboard('port1')">Click to Copy Port</button>
+            </div>
+
+            <div class="proxy">
+              <img src="https://www.freepnglogos.com/uploads/american-flag-png/simple-american-flag-16.png" alt="USA Flag" class="flag-img">
+              <h2>United States, New York 🇺🇸</h2>
+              <p>IP: 45.61.162.80</p>
+              <p>Port: 8970</p>
+              <p>Protocol: HTTP</p>
+              <button class="copy-button" onclick="copyToClipboard('ip2')">Click to Copy IP</button>
+              <button class="copy-button" onclick="copyToClipboard('port2')">Click to Copy Port</button>
+            </div>
+
+            <div class="proxy">
+              <img src="https://gallery.yopriceville.com/var/albums/National-Flags/Finland_Large_Flag.png?m=1441181270" alt="Finland Flag" class="flag-img">
+              <h2>Finland, Helsinki 🇫🇮</h2>
+              <p>IP: 65.109.232.115</p>
+              <p>Port: 25112</p>
+              <p>Protocol: HTTP</p>
+              <button class="copy-button" onclick="copyToClipboard('ip3')">Click to Copy IP</button>
+              <button class="copy-button" onclick="copyToClipboard('port3')">Click to Copy Port</button>
+            </div>
+
+            <div class="proxy">
+              <img src="https://pngimg.com/d/flags_PNG14674.png" alt="Germany Flag" class="flag-img">
+              <h2>Germany, Frankfurt am Main 🇩🇪</h2>
+              <p>IP: 37.114.37.242</p>
+              <p>Port: 25290</p>
+              <p>Protocol: HTTP</p>
+              <button class="copy-button" onclick="copyToClipboard('ip4')">Click to Copy IP</button>
+              <button class="copy-button" onclick="copyToClipboard('port4')">Click to Copy Port</button>
+            </div>
+
+          </section>
+
+          <footer>
+            <p>&copy; 2023 Free Proxies</p>
+          </footer>
+
+          <script>
+            function copyToClipboard(elementId) {
+              const element = document.getElementById(elementId);
+              const text = element.textContent;
+
+              const textarea = document.createElement('textarea');
+              textarea.value = text;
+              document.body.appendChild(textarea);
+              textarea.select();
+              document.execCommand('copy');
+              document.body.removeChild(textarea);
+
+              alert(`Copied: ${text}`);
+            }
+          </script>
+
+        </body>
+        </html>
