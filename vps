@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyk Cloud ☁️ - VPS</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    iframe {
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  function resizeIframe() {
+    var iframe = document.getElementById('myIframe');
+    var height = window.innerHeight;
+    var width = window.innerWidth;
+
+    iframe.style.width = width + 'px';
+    iframe.style.height = height + 'px';
+  }
+
+  function handleIframeLinkClick(event) {
+    var target = event.target;
+
+    if (target.tagName === 'A' && target.href) {
+      window.open(target.href, '_blank');
+      event.preventDefault();
+    }
+  }
+
+  // Initial resize
+  window.addEventListener('resize', resizeIframe);
+  window.addEventListener('load', resizeIframe);
+
+  // Handle link clicks within the iframe
+  var iframe = document.getElementById('myIframe');
+  iframe.contentDocument.addEventListener('click', handleIframeLinkClick);
+</script>
+
+<iframe id="myIframe" src="https://concreteyoungbug--legendyt4k.repl.co/" frameborder="0"></iframe>
+
+</body>
+</html>
