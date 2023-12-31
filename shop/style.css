@@ -118,12 +118,20 @@ nav a {
 
 
 /* Footer styling */
+/* Footer styling */
 footer {
-background-color: #303030;
- color: #ddd;
- text-align: center;
- padding: 4rem;
+  background-color: #303030;
+  color: #ddd;
+  text-align: center;
+  padding: 4rem;
+  position: fixed; /* Fixed position */
+  bottom: 0; /* Stick to the bottom */
+  left: 0; /* Stick to the left */
+  width: 100%; /* Take full width */
+  opacity: 0.5; /* Adjust opacity to make it a watermark */
+  z-index: 999; /* Ensure it's above other elements */
 }
+
 
 /* Media Query for Small Screens */
 @media screen and (max-width: 600px) {
