@@ -119,13 +119,10 @@ nav a {
 
 /* Footer styling */
 footer {
-  background-color: #303030;
-  color: #ddd;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+background-color: #303030;
+ color: #ddd;
+ text-align: center;
+ padding: 1rem;
 }
 
 /* Media Query for Small Screens */
